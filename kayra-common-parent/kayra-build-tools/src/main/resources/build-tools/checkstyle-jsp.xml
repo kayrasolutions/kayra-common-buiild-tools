@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+
+<module name="Checker">
+    <!-- Miscellaneous: http://checkstyle.sourceforge.net/config_misc.html -->
+    <!-- <module name="NewlineAtEndOfFile" /> -->
+
+    <!-- Whitespace: http://checkstyle.sourceforge.net/config_whitespace.html -->
+    <module name="FileTabCharacter" />
+
+    <!-- Regexp: http://checkstyle.sourceforge.net/config_regexp.html -->
+    <!--<module name="RegexpMultiline">
+        <property name="format" value="(?s)<%[^@-](?!%>).*?%>" />
+        <property name="message" value="Java code is not allowed in JSPs, consider using expression language or tag library." />
+    </module>-->
+</module>
