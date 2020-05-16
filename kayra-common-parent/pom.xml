@@ -5,6 +5,9 @@
   <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>Kayra Common Parent</name>
+  <description>
+        The Kayra Solutions Common Build Tools.
+  </description>
 
 
 	<!-- ====================================================================== -->
@@ -169,9 +172,14 @@
                 <plugin>
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>1.6</version>
-	                <configuration>
-						<skip>true</skip>
-					</configuration>
+	                <executions>
+	                    <execution>
+	                        <phase>deploy</phase>
+	                        <goals>
+	                            <goal>sign</goal>
+	                        </goals>
+	                    </execution>
+	                </executions>
                 </plugin>
 			</plugins>
 		</pluginManagement>
